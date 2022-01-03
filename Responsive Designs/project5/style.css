@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    background-color: #be3144;
+    color: white;
+    height: 4em;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    /* text-decoration: none; */
+
+}
+#navbar ul li{
+    padding: 5px;
+    list-style: none;
+    margin-top: 18px;
+    margin-right: 25px;
+    /* color: white; */
+}
+#navbar ul a li{
+    text-decoration: none;
+    color: white;
+}
+#navbar ul a li::hover{
+    
+}

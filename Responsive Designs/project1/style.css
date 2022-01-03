@@ -1,0 +1,50 @@
+#main{
+    background-color:#eee;
+    font-family:'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+header h1{
+    padding: 28px;
+    font: size 4rem;
+}
+header p,h1{
+    text-align: center;
+}
+#img-caption p{
+    text-align: center;
+}
+#img-div{
+    background-color: white;
+    margin: 0px 33px;
+    padding: 10px;
+}
+#imgs{
+    text-align: center;
+    margin: 0px 20px;
+    /* background-color: white; */
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+#tribute-inf h3{
+    text-align: center;
+}
+#tribute-inf ul{
+    text-align: left;
+    margin: 0px auto 50px auto;
+    line-height: 36px;
+    max-width: 550px;
+}
+#link {
+    text-align: center;
+    font-size: larger;
+    padding: 18px;
+}
+
+#quote{
+    text-align:center;
+    font-size: large;
+    margin: 30px auto 0 auto;
+    max-width: 100%;
+    padding: 2rem;
+}

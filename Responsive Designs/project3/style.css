@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  min-height: 75px;
+  background-color: #eee;
+}
+@media screen and (max-width:650px) {
+  header{
+    flex-wrap: wrap;
+  }
+  .logo{
+    width: 100%;
+    position: relative;
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+  }
+  #nav-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+
+  }
+  #intro{
+    padding-top: 145px;
+  }
+  .desc{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    height: 150px;
+    margin-right: 40px;
+
+  }
+  .icon i{
+    display:none;
+  }
+  #pricing{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   #valve,#tenor,#bass{
+    max-width: 300px;
+    width: 100%;
+    /* margin: 0 auto;
+    margin-bottom: 10px; */
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+}
+#intro h2 {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+/* navbar issue not fixed  
+ have to find a way to make it responsive*/
+#nav-bar {
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+#nav-bar ul {
+  display: flex;
+  float: right;
+  padding: 25px;
+}
+#nav-bar ul li {
+  /* display: flex; */
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+  }
+  list-style: none;
+  padding: 0px 25px 0px 25px;
+  font-weight: 400;
+}
+#nav-bar ul li a {
+  color: black;
+  text-decoration: none;
+}
+.logo img {
+  @media screen and (max-width: 650px) {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+  max-width: 300px;
+  width: 100%;
+  padding: 25px;
+}
+section {
+  padding-top: 75px;
+  /* display: flex; */
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+#email {
+  /* use max width to make input tags responsive*/
+  border-radius: 0;
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-weight: 300;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5px;
+}
+#btn-intro {
+  border-radius: 0;
+  padding: 5px;
+  width: 100%;
+  border-style: none;
+  font-weight: 1000;
+  font-size: 1em;
+  /* border-color: black; */
+  /* border-width: 0.5px; */
+  max-width: 150px;
+  background-color: #f1c40f;
+  cursor: pointer;
+}
+section form input {
+  max-width: 150px;
+}
+/* icons */
+.icon {
+  /* color:darkorange; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid {
+  display: flex;
+}
+#videoplayer {
+  margin: 70px auto 15px auto;
+  display: flex;
+  justify-content: center;
+}
+#pricing {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px 40px 60px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+#pricing h2 {
+  text-align: center;
+  margin: 20px;
+}
+.level {
+  text-align: center;
+  background-color: #ddd;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: calc(100% / 3);
+  margin: 10px;
+  
+}
+.price-list li {
+  margin: 15px 0;
+  list-style: none;
+  text-align: center;
+}
+.btn {
+  border-radius: 0;
+  padding: 5px;
+  width: 100%;
+  border-style: none;
+  font-weight: 1000;
+  font-size: 1em;
+  max-width: 150px;
+  background-color: #f1c40f;
+  cursor: pointer;
+  margin: 15px 0;
+}
+footer {
+  background-color: #ddd;
+  width: 100%;
+  padding: 15px 0 15px 0;
+  margin: 10px 0 10px 0;
+}
+footer ul {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+footer ul li {
+  flex-direction: row-reverse;
+  list-style: none;
+  padding: 5px;
+}
+footer ul li a {
+  color: black;
+  text-decoration: none;
+}
+footer span {
+  padding: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+}
