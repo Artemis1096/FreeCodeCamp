@@ -1,7 +1,9 @@
+/* main */
 #main{
     background-color:#eee;
     font-family:'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
+/* header */
 header h1{
     padding: 28px;
     font: size 4rem;
@@ -9,6 +11,7 @@ header h1{
 header p,h1{
     text-align: center;
 }
+/* img */
 #img-caption p{
     text-align: center;
 }
@@ -20,12 +23,12 @@ header p,h1{
 #imgs{
     text-align: center;
     margin: 0px 20px;
-    /* background-color: white; */
 }
 img{
     max-width:100%;
     height:auto;
 }
+/* Tribute Column */
 #tribute-inf h3{
     text-align: center;
 }
@@ -35,16 +38,16 @@ img{
     line-height: 36px;
     max-width: 550px;
 }
-#link {
-    text-align: center;
-    font-size: larger;
-    padding: 18px;
-}
-
+/* quote section */
 #quote{
     text-align:center;
     font-size: large;
     margin: 30px auto 0 auto;
     max-width: 100%;
     padding: 2rem;
+}
+#link {
+    text-align: center;
+    font-size: larger;
+    padding: 18px;
 }

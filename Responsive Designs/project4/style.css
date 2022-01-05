@@ -1,77 +1,78 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-#navbar{
-    position: fixed;
-    height: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow: auto;
-    width: 300px;
-    border: 1px solid black;
+#navbar {
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 300px;
+  border: 1px solid black;
 }
 @media screen and (max-width: 800px) {
-    #navbar{
-        width: 100%;
-        height: auto;
-        position: relative;
-    }   
-    #navbar a{
-        float: none;
-    }   
-    #mainsec{
-        position: relative;
-        margin-left: 0px;
-        margin-top: 150px;
-    }
-    .main-section{
-        margin-left: 0;
-
-    }
+  #navbar {
+    width: 100%;
+    position: relative;
+    max-height: 375px;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  #mainsec {
+    position: relative;
+    margin-left: 0px;
+    float: right;
+  }
 }
-#navbar a{
-    font-size: 1em;
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
+#navbar a {
+  font-size: 1em;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
 }
-#navbar header{
-    display: block;
-    font-size: larger;
-    font-weight: bolder;
-    padding: 16px;
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
+#navbar header {
+  display: block;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 16px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
 }
 /* for main content margin  */
-.main-section{
-    margin-left: 310px;
-    padding: 20px;
-    line-height: 2em;
+#mainsec{
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
 }
-.main-section header{
-    font-size: xx-large;
-    padding:10px 0 10px 0;
+.main-section {
+  padding: 20px;
+  line-height: 2em;
 }
-.main-section ul{
-    padding-top: 5px;
-    margin: 0 42px 0 60px;
+.main-section header {
+  font-size: xx-large;
+  padding: 10px 0 10px 0;
 }
-.container{
-    display: block;
-text-align: left;
-white-space: pre-line;
-position: relative;
-word-break: normal;
-word-wrap: normal;
-line-height: 2;
-background-color: #f7f7f7;
-padding: 15px;
-margin: 10px;
-border-radius: 5px;
+.main-section ul {
+  padding-top: 5px;
+  margin: 0 42px 0 60px;
+}
+.container {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
 }

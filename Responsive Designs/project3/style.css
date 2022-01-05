@@ -2,15 +2,7 @@
   padding: 0;
   margin: 0;
 }
-header {
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
-  min-height: 75px;
-  background-color: #eee;
-}
+/* media queries */
 @media screen and (max-width:650px) {
   header{
     flex-wrap: wrap;
@@ -53,23 +45,10 @@ header {
    #valve,#tenor,#bass{
     max-width: 300px;
     width: 100%;
-    /* margin: 0 auto;
-    margin-bottom: 10px; */
   }
 }
-body {
-  font-family: "Lato", sans-serif;
-  background-color: #eee;
-}
-#intro h2 {
-  text-align: center;
-  font-weight: bolder;
-  margin-top: 40px;
-}
-/* navbar issue not fixed  
- have to find a way to make it responsive*/
-#nav-bar {
-  @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
+  #nav-bar{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -78,16 +57,34 @@ body {
     padding: 0 50px;
   }
 }
+@media screen and (max-width: 650px) {
+  .logo img{
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    #nav-bar ul li{
+      flex-direction: column;
+    }
+  }
+/* header */
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  min-height: 75px;
+  background-color: #eee;
+}
 #nav-bar ul {
   display: flex;
   float: right;
   padding: 25px;
 }
 #nav-bar ul li {
-  /* display: flex; */
-  @media screen and (max-width: 650px) {
-    flex-direction: column;
-  }
   list-style: none;
   padding: 0px 25px 0px 25px;
   font-weight: 400;
@@ -96,19 +93,19 @@ body {
   color: black;
   text-decoration: none;
 }
+/* logo */
 .logo img {
-  @media screen and (max-width: 650px) {
-    margin-top: 15px;
-    width: 100%;
-    position: relative;
-  }
   max-width: 300px;
   width: 100%;
   padding: 25px;
 }
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+}
+/* section */
 section {
   padding-top: 75px;
-  /* display: flex; */
 }
 section form {
   display: flex;
@@ -116,8 +113,12 @@ section form {
   align-items: center;
   padding: 10px;
 }
+#intro h2 {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 40px;
+}
 #email {
-  /* use max width to make input tags responsive*/
   border-radius: 0;
   padding: 5px;
   margin: 10px;
@@ -135,8 +136,6 @@ section form {
   border-style: none;
   font-weight: 1000;
   font-size: 1em;
-  /* border-color: black; */
-  /* border-width: 0.5px; */
   max-width: 150px;
   background-color: #f1c40f;
   cursor: pointer;
@@ -144,9 +143,8 @@ section form {
 section form input {
   max-width: 150px;
 }
-/* icons */
+/* features */
 .icon {
-  /* color:darkorange; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,19 +152,21 @@ section form input {
   width: 20vw;
   color: darkorange;
 }
+.grid {
+  display: flex;
+}
 .desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.grid {
-  display: flex;
-}
+/* videoplayer */
 #videoplayer {
   margin: 70px auto 15px auto;
   display: flex;
   justify-content: center;
 }
+/* pricing section */
 #pricing {
   display: flex;
   justify-content: space-between;
@@ -215,6 +215,7 @@ section form input {
   cursor: pointer;
   margin: 15px 0;
 }
+/* footer */
 footer {
   background-color: #ddd;
   width: 100%;

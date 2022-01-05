@@ -4,29 +4,142 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
 }
+/* navbar */
 #navbar{
     background-color: #be3144;
     color: white;
-    height: 4em;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid black;
 }
 #navbar ul{
     display: flex;
     flex-direction: row-reverse;
-    /* text-decoration: none; */
-
+    margin-right: 2rem;
 }
 #navbar ul li{
     padding: 5px;
     list-style: none;
     margin-top: 18px;
     margin-right: 25px;
-    /* color: white; */
+    font-size: 1.25em;
 }
-#navbar ul a li{
+#navbar ul a{
     text-decoration: none;
     color: white;
+    padding: 27px 20px 16px 20px;
 }
-#navbar ul a li::hover{
-    
+#navbar a:hover{
+    background-color: gray;
+}
+/* welcome section */
+#welcome-section{
+    display: flex;
+    padding-top: 90px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+#welcome-heading{
+    color: white;
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+}
+#welcome-section p{
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #be3144;
+}
+/* Project Section */
+#project-section-heading{
+    padding: 1rem;
+    color: white;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #f0f0f0;
+    max-width: 640px;
+    font-size: 2.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.project-tile{
+    height: 17rem;
+}
+.product-image{
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit:fill;
+}
+#projects{
+    text-align: center;
+    padding: 5rem 3rem;
+    background: #45567d;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap:4rem 5rem;
+}
+.name-tag{
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 0.5rem;
+}
+.btn-show-all{
+    background: #303841;
+    font-size: 1.3rem;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.btn-show-all:hover{
+    background: #be3144;
+}
+/* contact section */
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #303841;
+    width: 100%;
+    height: 80vh;
+}
+.contact-section-header{
+    padding: 40px;
+}
+.contact-section-header h2{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+.contact-section-header p{
+    font-style: italic;
+    color: white;
+    font-size: 2rem;
+}
+.contact-links{
+    padding: 2px;
+}
+.contact-details{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    padding: 1rem 2rem;
+}
+.contact-details:hover{
+    transform: translateY(8px);
+}
+.contact-details i{
+    padding: 5px;
 }
